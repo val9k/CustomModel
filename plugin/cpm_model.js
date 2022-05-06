@@ -19,10 +19,10 @@
 					let bones = [];
 					let texture = "texturename";
 					let filename = "modelname";
-					if (textures[0]) {
-						let index = textures[0].name.indexOf(".");
+					if (Project.textures[0]) {
+						let index = Project.textures[0].name.indexOf(".");
 						if (index >= 0) {
-							filename = textures[0].name.substring(0, index);
+							filename = Project.textures[0].name.substring(0, index);
 							texture = "tex." + filename;
 							let textureSize = [ Project.texture_width, Project.texture_height ];
 						}
